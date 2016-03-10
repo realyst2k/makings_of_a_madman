@@ -1,0 +1,6 @@
+toc_hack.js:
+    JS I put together to include in the header 
+    of a weebly blog post which generates a wiki 
+    style table of contents in the post.
+    Add it to the header code in the "Blog Settings"
+    button in the blog editor (not the page editor)
