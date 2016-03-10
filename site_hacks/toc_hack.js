@@ -79,7 +79,6 @@ function toc_gen () {
                 $(val).replaceWith(tocdiv);
             }
             else {
-                console.log($(val).text());
                 var a=document.createElement('a');
                 var atitle=$(val).text().replace(/[^a-zA-Z0-9]/g,'');
                 a.setAttribute('name',atitle);
@@ -87,7 +86,6 @@ function toc_gen () {
                 var lk=document.createElement('a');
                 if($(val).text().match(/^(_+)/)) {
                     var us_matches=$(val).text().match(/^(_+)+/);
-                    console.log(us_matches[0]);
                     var t=$(val).text().replace(/^_+/,'');
                     $(val).text(t);
                     $(val).addClass('toc-subtitle-flag');
